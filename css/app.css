@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 50px;
+  background: #f9f5f1;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: 700;
+}
