@@ -4,10 +4,149 @@
   padding: 0;
   margin: 0;
 }
-body{
+
+
+body {
+  padding: 25px 50px; /* top & bottom, left & right */
+  background: #000;
+  color: #fefdfd;
+  font-size: 2.6em;
+  font-weight: 500;
+}
+header {
+  text-align: center; /* Center-align the text in the header */
+  padding: 50px 20px; /* Add padding around the header */
+  background: url('../assets/header2.jpeg');
+  border-bottom: 3px solid #000000; /* Optional border at the bottom */
+  background-size: cover;
+  background-position-y: -250px;
+  height: 500px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+header h1 {
+  font-size: 2.5em; /* Adjust size for the main title */
+  margin: 0; /* Remove default margin */
+  color: #fff; /* Dark color for contrast */
+  text-shadow: 2px 2px 7px #222;
+  
+}
+
+header p {
+  font-size: 1.2em; /* Adjust size for the subtitle */
+  margin: 10px 0 0; /* Space above the paragraph */
+  color: #0e4db9; /* Slightly lighter color for the subtitle */
+  text-shadow: 2px 2px 7px #222;
+  background-color: #d1d4d7;
+  
+  
+}
+
+#about {
+  color: #000;
+  width: 100%;
   padding: 50px;
-  background: #f9f5f1;
-  color: #fff;
+  background: #599bc3;
+  border: 3px solid #000;
+  text-align: left;
+}
+#about img {
+  max-width: 250px; /* Limits the image size */
+  margin: 0 20px 20px 0;
+  height: auto; /* Maintains aspect ratio */
+  float: left;;
+  border-width: 6px;
+  border-radius: 12px;
+  border-color: #000;
+}
+
+#about p {
+  color: #fff; /* Ensures text is readable against background */
+  font-size: 1em; /* Adjust font size as needed */
+  line-height: 1.6;
+  
+}
+#careerGoals {
+  width: 100%;
+  padding: 100px 50px;
+  background: #24415d;
+  border: 3px solid #000;
+  color: #fff ;
+}
+/* Career Goals Header Styling */
+#careerGoals h1 {
+  color: #000; /* Set header color to black */
+  font-size: 1.6em; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Center the text */
+}
+#Portfolio h1 {
+  text-align: center;
   font-size: 1.6em;
-  font-weight: 700;
+  margin: 20px 0;
+  color: #fff;
+  
+}
+
+/* Video Section */
+.video-container {
+  display: flex; /* Use flexbox for video alignment */
+  justify-content: center; /* Center videos horizontally */
+  margin:  0; /* Adds margin above and below */
+  align-items: center;
+  padding: 0;
+  
+}
+video {
+  width: 30%; /* Adjust width to fit three videos in one line */
+  border-radius: 8px;
+  margin: 0; /* Margin around each video for spacing */
+  padding: 0;
+}
+
+#portfolio img {
+  margin: 30px; /* Adds spacing around each image */
+  width: 350px; /* Set a maximum width for responsiveness */
+  height: auto; /* Automatically adjusts height to maintain aspect ratio */
+  border-radius: 16px; /* Add rounded corners if desired */
+  display:inline-block; 
+  align-content: center;
+}
+
+/* Contact Section */
+#contact {
+  width: 100%;
+  padding: 100px 50px;
+  background: #0cbcf2;
+  border: 3px solid #000;
+  color: #000;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  text-align: center; /* Center text */
+}
+
+/* Social Icons Styles */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center social icons */
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 30px; /* Adjust the size as needed */
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: right;
+  font-size: 0.5em;
+  padding-right: 50px;
+  padding-top: 10px;
 }
