@@ -97,6 +97,7 @@ header p {
   align-items: center;
   padding: 0;
   
+  
 }
 video {
   width: 30%; /* Adjust width to fit three videos in one line */
@@ -112,6 +113,7 @@ video {
   border-radius: 16px; /* Add rounded corners if desired */
   display:inline-block; 
   align-content: center;
+  text-align: center;
 }
 
 /* Contact Section */
