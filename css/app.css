@@ -81,12 +81,12 @@ header p {
   margin: 0; /* Remove default margin */
   text-align: left; /* Center the text */
 }
-#Portfolio h1 {
-  text-align: center;
+#portfolio h1 {
+  font-family: cursive; /* Or any other fancy font */
   font-size: 1.6em;
-  margin: 20px 0;
-  color: #fff;
-  
+  text-align: center; /* Center-align text */
+  color: #222;
+  margin-bottom: 20px;
 }
 
 /* Video Section */
@@ -96,6 +96,7 @@ header p {
   margin:  0; /* Adds margin above and below */
   align-items: center;
   padding: 0;
+  cursor: pointer;
   
   
 }
@@ -111,16 +112,15 @@ video {
   width: 350px; /* Set a maximum width for responsiveness */
   height: auto; /* Automatically adjusts height to maintain aspect ratio */
   border-radius: 16px; /* Add rounded corners if desired */
-  display:inline-block; 
-  align-content: center;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Contact Section */
 #contact {
   width: 100%;
   padding: 100px 50px;
-  background: #0cbcf2;
+  background: #07799c;
   border: 3px solid #000;
   color: #000;
   border-bottom-left-radius: 16px;
@@ -128,22 +128,28 @@ video {
   text-align: center; /* Center text */
 }
 
-/* Social Icons Styles */
+/* Social Media Container */
 .social-icons {
   display: flex;
-  justify-content: center; /* Center social icons */
-  margin-top: 10px;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
 }
 
 .social-icon {
-  width: 30px; /* Adjust the size as needed */
-  margin: 0 10px;
-  transition: transform 0.3s;
+  width: 40px; /* Icon size */
+  height: 40px;
+  transition: all 0.3s ease; /* Smooth transition */
+  border-radius: 50%; /* Circle shape */
+  cursor: pointer;
 }
 
+/* Icon Hover Effect */
 .social-icon:hover {
-  transform: scale(1.1); /* Scale effect on hover */
+  background: #fff; /* Change background color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
+
+
 
 /* Footer Styles */
 footer {
