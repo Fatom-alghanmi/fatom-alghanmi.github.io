@@ -70,17 +70,55 @@ header p {
 #skills-technologies {
   width: 100%;
   padding: 100px 50px;
-  background: #4a81b5;
-  border: 3px solid #000;
-  color: #fff ;
+  background: #4a81b5; /* Dark Blue */
+  color: #fff;
+  text-align: center; /* Center section title and content by default */
+  box-sizing: border-box;
 }
-/* Career Goals Header Styling */
-#skills-technologies h3 {
-  color: #000; /* Set header color to black */
-  font-size: 1.6em; /* Adjust font size as needed */
-  margin: 0; /* Remove default margin */
-  text-align: left; /* Center the text */
+
+#skills-technologies h1 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #fff;
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent for contrast */
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-card h3 {
+  color: #fff; /* White for better contrast */
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skill-card p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .portfolio-title {
   display: flex;
   justify-content: center;
