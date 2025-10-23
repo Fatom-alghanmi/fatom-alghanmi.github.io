@@ -70,12 +70,12 @@ header p {
 #skills-technologies {
   width: 100%;
   padding: 100px 50px;
-  background: #24415d;
+  background: #4a81b5;
   border: 3px solid #000;
   color: #fff ;
 }
 /* Career Goals Header Styling */
-#careerGoals h1 {
+#skills-technologies h3 {
   color: #000; /* Set header color to black */
   font-size: 1.6em; /* Adjust font size as needed */
   margin: 0; /* Remove default margin */
