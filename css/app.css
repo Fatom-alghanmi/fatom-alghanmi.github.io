@@ -245,3 +245,28 @@ footer {
   padding-right: 50px;
   padding-top: 10px;
 }
+/* --- Lightbox Fix --- */
+
+/* Ensure Lightbox overlay and container are always on top of all other content */
+.lightboxOverlay,
+.lightbox {
+  z-index: 9999 !important;
+}
+
+/* Allow closing when clicking the overlay */
+.lightboxOverlay {
+  cursor: pointer !important;
+}
+
+/* Prevent background scroll issues when Lightbox is active */
+body.lb-disable-scrolling {
+  overflow: hidden !important;
+}
+
+/* Optional: style the close button for visibility */
+.lb-close {
+  top: 20px !important;
+  right: 20px !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
