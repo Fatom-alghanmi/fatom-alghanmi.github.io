@@ -72,12 +72,12 @@ header p {
   padding: 100px 50px;
   background: #4a81b5; /* Dark Blue */
   color: #fff;
-  text-align: center; /* Center section title and content by default */
+  text-align: center; 
   box-sizing: border-box;
 }
 
 #skills-technologies h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 50px;
   color: #fff;
 }
@@ -90,7 +90,7 @@ header p {
 }
 
 .skill-card {
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent for contrast */
+  background-color: rgba(255, 255, 255, 0.1); 
   padding: 25px;
   border-radius: 12px;
   border: 2px solid #fff;
@@ -106,8 +106,8 @@ header p {
 }
 
 .skill-card h3 {
-  color: #fff; /* White for better contrast */
-  font-size: 1.5em;
+  color: #fff; 
+  font-size: 1.4em;
   margin-bottom: 15px;
   text-align: center;
 }
