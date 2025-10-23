@@ -68,30 +68,27 @@
     </video>
   </div>
   
-   <!-- Image Section -->
-<div class="image-gallery">
-  <a href="assets/caretrack.jpeg" data-lightbox="portfolio">
-    <img src="assets/caretrack.jpeg" alt="CareTrack Project">
-  </a>
-  <a href="assets/booklist.jpeg" data-lightbox="portfolio">
-    <img src="assets/booklist.jpeg" alt="Booklist Project">
-  </a>
-  <a href="assets/reservation.jpeg" data-lightbox="portfolio">
-    <img src="assets/reservation.jpeg" alt="Reservation Project">
-  </a>
-  <a href="assets/sunglasses.jpeg" data-lightbox="portfolio">
-    <img src="assets/sunglasses.jpeg" alt="Sunglasses Project">
-  </a>
-</div>
+  <!-- Image Section -->
+  <div class="image-gallery">
+    <a href="assets/caretrack.jpeg" data-lightbox="portfolio">
+      <img src="assets/caretrack.jpeg" alt="CareTrack Project">
+    </a>
+    <a href="assets/booklist.jpeg" data-lightbox="portfolio">
+      <img src="assets/booklist.jpeg" alt="Booklist Project">
+    </a>
+    <a href="assets/reservation.jpeg" data-lightbox="portfolio">
+      <img src="assets/reservation.jpeg" alt="Reservation Project">
+    </a>
+    <a href="assets/sunglasses.jpeg" data-lightbox="portfolio">
+      <img src="assets/sunglasses.jpeg" alt="Sunglasses Project">
+    </a>
+  </div>
 
-
-    <div class="xd-buttons">
-      <a href="https://xd.adobe.com/view/b4cd46c6-2e80-4d98-b940-211d3da10a32-e19e/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 1</a>
-      <a href="https://xd.adobe.com/view/916f23a5-d649-4255-836e-f45ec1b6151c-c43c/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 2</a>
-      <a href="https://xd.adobe.com/view/11f7d003-8912-4574-a1d0-c52628a6740c-44a4/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 3</a>
-    </div>
-    
-    
+  <div class="xd-buttons">
+    <a href="https://xd.adobe.com/view/b4cd46c6-2e80-4d98-b940-211d3da10a32-e19e/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 1</a>
+    <a href="https://xd.adobe.com/view/916f23a5-d649-4255-836e-f45ec1b6151c-c43c/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 2</a>
+    <a href="https://xd.adobe.com/view/11f7d003-8912-4574-a1d0-c52628a6740c-44a4/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 3</a>
+  </div>
   
   <!-- Contact Section -->
   <section id="contact">
@@ -113,6 +110,20 @@
   <footer>
     <p>&copy; 2025 Fatom-Al-ghanmi, all rights reserved.</p>
   </footer> 
+
+  <!-- jQuery (required for Lightbox2) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Lightbox2 Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- Lightbox Initialization -->
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling': false
+    });
+  </script>
 </body>
 </html>
