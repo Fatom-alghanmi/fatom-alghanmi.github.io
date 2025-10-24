@@ -11,7 +11,7 @@ body {
   padding: 0;
   background: #000;
   color: #fefdfd;
-  font-family: 'Playfair Display', serif;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -48,7 +48,7 @@ header {
 
 header h1 {
   
-  font-size: 2.5em; 
+  font-size: 3em; 
   font-family: 'Tangerine', cursive;
   text-align: center;
   margin: 0; 
@@ -62,7 +62,7 @@ header p {
   margin: 10px 0 0;
   color: #eaee6d;
   text-shadow: 2px 2px 7px #222;
-  background-color: #d1d4d781;
+  background-color: #64676981;
   padding: 5px 10px;
   border-radius: 5px;
 }
