@@ -176,6 +176,7 @@ video {
   gap: 15px; /* spacing between buttons */
   flex-wrap: wrap; /* wrap to next line on smaller screens */
   margin: 20px 0;
+  color:#fff;
 }
 
 
