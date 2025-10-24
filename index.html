@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Tiny5&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css">
   <title>Fatom</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <!-- <h1>Fatom AL-Ghanmi</h1>
-    <p>Where Creativity Meets Code</p> -->
     <nav>
       <a href="#about">About Me</a>
       <a href="#skills-technologies">Skills / Technologies</a>
@@ -22,17 +25,17 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  
+
+  <!-- ABOUT SECTION -->
   <section id="about">
     <h1>About Me</h1>
-    <img class="thumbnail" src="assets/aboutme.png" alt="image 1">
-    <p>Hello! I’m Fatom, a Mobile Web Development student currently based in Toronto, Canada. I’m passionate about building web and mobile applications that are both functional and user-friendly.
-
-      At triOS College, I’ve developed skills in HTML, CSS, JavaScript, React, Angular, PHP, MySQL, Swift, and Android development, and completed capstone projects that showcase my ability to design and implement real-world applications.
-      
-      Through my projects, I focus on creating clean, responsive designs and delivering high-quality code. I’m excited to continue learning, building innovative solutions, and sharing my work with the tech community.</p>
+    <img class="thumbnail" src="assets/aboutme.png" alt="About Me">
+    <p>Hello! I’m Fatom, a Mobile Web Development student currently based in Toronto, Canada. I’m passionate about building web and mobile applications that are both functional and user-friendly.</p>
+    <p>At triOS College, I’ve developed skills in HTML, CSS, JavaScript, React, Angular, PHP, MySQL, Swift, and Android development, and completed capstone projects that showcase my ability to design and implement real-world applications.</p>
+    <p>Through my projects, I focus on creating clean, responsive designs and delivering high-quality code. I’m excited to continue learning, building innovative solutions, and sharing my work with the tech community.</p>
   </section>
-  
+
+  <!-- SKILLS SECTION -->
   <section id="skills-technologies">
     <h1>Skills / Technologies</h1>
     <div class="skills-grid">
@@ -42,8 +45,7 @@
       </div>
       <div class="skill-card">
         <h3>Back-End</h3>
-        <p>PHP</p>
-        <p>MySQL</p>
+        <p>PHP, MySQL</p>
       </div>
       <div class="skill-card">
         <h3>Mobile</h3>
@@ -55,80 +57,74 @@
       </div>
     </div>
   </section>
-  
-  
-  <!-- Video Section -->
-  <section id="portfolio-title">
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
     <h1 class="portfolio-title">Portfolio</h1>
 
+    <!-- Videos -->
+    <div class="video-container">
+      <video controls>
+        <source src="assets/video1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="assets/video2.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="assets/video3.mp4" type="video/mp4">
+      </video>
+    </div>
 
-  <div class="video-container">
-    <video controls>
-      <source src="assets/video1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <video controls>
-      <source src="assets/video2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <video controls>
-      <source src="assets/video3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  
-  <!-- Image Section -->
-  <div class="image-gallery">
-    <a href="assets/caretrack.jpeg" data-lightbox="portfolio">
-      <img src="assets/caretrack.jpeg" alt="CareTrack Project">
-    </a>
-    <a href="assets/booklist.jpeg" data-lightbox="portfolio">
-      <img src="assets/booklist.jpeg" alt="Booklist Project">
-    </a>
-    <a href="assets/reservation.jpeg" data-lightbox="portfolio">
-      <img src="assets/reservation.jpeg" alt="Reservation Project">
-    </a>
-    <a href="assets/sunglasses.jpeg" data-lightbox="portfolio">
-      <img src="assets/sunglasses.jpeg" alt="Sunglasses Project">
-    </a>
-  </div>
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <a href="assets/caretrack.jpeg" data-lightbox="portfolio">
+        <img src="assets/caretrack.jpeg" alt="CareTrack Project">
+      </a>
+      <a href="assets/booklist.jpeg" data-lightbox="portfolio">
+        <img src="assets/booklist.jpeg" alt="Booklist Project">
+      </a>
+      <a href="assets/reservation.jpeg" data-lightbox="portfolio">
+        <img src="assets/reservation.jpeg" alt="Reservation Project">
+      </a>
+      <a href="assets/sunglasses.jpeg" data-lightbox="portfolio">
+        <img src="assets/sunglasses.jpeg" alt="Sunglasses Project">
+      </a>
+    </div>
 
-  <div class="xd-buttons-Grid">
-    <a href="https://xd.adobe.com/view/b4cd46c6-2e80-4d98-b940-211d3da10a32-e19e/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 1</a>
-    <a href="https://xd.adobe.com/view/916f23a5-d649-4255-836e-f45ec1b6151c-c43c/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 2</a>
-    <a href="https://xd.adobe.com/view/11f7d003-8912-4574-a1d0-c52628a6740c-44a4/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 3</a>
-    <a href="https://xd.adobe.com/view/6324a957-ff23-41e7-90e6-f03d56ba3c26-3677/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 4</a>
-  </div>
-</section>
-  
-  <!-- Contact Section -->
+    <!-- XD Prototypes -->
+    <div class="xd-buttons-Grid">
+      <a href="https://xd.adobe.com/view/b4cd46c6-2e80-4d98-b940-211d3da10a32-e19e/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 1</a>
+      <a href="https://xd.adobe.com/view/916f23a5-d649-4255-836e-f45ec1b6151c-c43c/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 2</a>
+      <a href="https://xd.adobe.com/view/11f7d003-8912-4574-a1d0-c52628a6740c-44a4/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 3</a>
+      <a href="https://xd.adobe.com/view/6324a957-ff23-41e7-90e6-f03d56ba3c26-3677/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 4</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
   <section id="contact">
     <h2>Contact</h2>
     <div class="social-icons">
       <a href="https://github.com/fatom-alghanmi" target="_blank">
-        <img width="32" height="32" src="https://img.icons8.com/windows/32/github.png" alt="github"/>
+        <img src="https://img.icons8.com/windows/32/github.png" alt="github"/>
       </a>
       <a href="https://www.linkedin.com/in/fatom-al-ghanmi-8690a351/" target="_blank">
-        <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/linkedin--v1.png" alt="linkedin"/>
+        <img src="https://img.icons8.com/material-rounded/30/linkedin--v1.png" alt="linkedin"/>
       </a>
       <a href="https://www.instagram.com/craftsbyalghanmia/profilecard/?igsh=M2c2YjR3MzY4bmwx" target="_blank">
-        <img width="32" height="32" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram"/>
+        <img src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram"/>
       </a>
     </div>
     <a href="mailto:alienabductionsfordummies@hotmail.com">Interested in Collaborating? Email me!</a>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Fatom-Al-ghanmi, all rights reserved.</p>
-  </footer> 
+    <p>&copy; 2025 Fatom-Al-Ghanmi, all rights reserved.</p>
+  </footer>
 
-  <!-- jQuery (required for Lightbox2) -->
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- Lightbox2 Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-  <!-- Lightbox Initialization -->
   <script>
     lightbox.option({
       'resizeDuration': 200,
@@ -136,5 +132,6 @@
       'disableScrolling': false
     });
   </script>
+
 </body>
 </html>
