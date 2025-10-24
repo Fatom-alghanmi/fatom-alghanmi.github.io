@@ -7,10 +7,10 @@
 
 
 body {
-  padding: 25px 50px; /* top & bottom, left & right */
+  padding: 1.5rem 3rem; /* top & bottom, left & right */
   background: #000;
   color: #fefdfd;
-  font-size: 2.6em;
+  font-size: 1rem;
   font-weight: 500;
 }
 header {
@@ -64,7 +64,6 @@ header nav a:hover {
 #about {
   color: #000;
   width: 100%;
-  padding: 50px;
   background: #599bc3;
   border: 3px solid #000;
   text-align: left;
@@ -87,7 +86,6 @@ header nav a:hover {
 }
 #skills-technologies {
   width: 100%;
-  padding: 100px 50px;
   background: #4a81b5; /* Dark Blue */
   color: #fff;
   text-align: center; 
@@ -215,13 +213,17 @@ video {
 /* Contact Section */
 #contact {
   width: 100%;
-  padding: 100px 50px;
   background: #07799c;
   border: 3px solid #000;
   color: #000;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   text-align: center; /* Center text */
+}
+
+/* Section padding */
+#about, #skills-technologies, #contact {
+  padding: 3rem 2rem; /* scales with body font size */
 }
 
 /* Social Media Container */
