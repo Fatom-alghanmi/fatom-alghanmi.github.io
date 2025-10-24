@@ -96,6 +96,7 @@ header nav a:hover {
 section {
   margin: 0 auto;
   max-width: none; 
+  height: auto;
   padding: 3rem 2rem;
   width: 100%;
   border-radius: 12px;
