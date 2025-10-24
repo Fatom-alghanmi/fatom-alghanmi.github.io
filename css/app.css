@@ -124,7 +124,8 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px; /* Ensures it takes the full viewport height */
+  height: 60px;
+  background: #2b526a;
   margin: 20px;
   font-size: 1.6em;
 }
