@@ -48,7 +48,7 @@ header {
 
 header h1 {
   
-  font-size: 3em; 
+  font-size: 3.5em; 
   font-family: 'Tangerine', cursive;
   text-align: center;
   margin: 0; 
@@ -57,7 +57,7 @@ header h1 {
 }
 
 header p {
-  font-size: 1.3em; 
+  font-size: 1em; 
   text-align: center;
   margin: 10px 0 0;
   color: #eaee6d;
@@ -102,8 +102,10 @@ section {
 /* About Section */
 #about {
   background: #599bc3;
+  width: 100%;
   color: #fff;
   border: 3px solid #000;
+  height: auto;
   text-align: left;
 }
 
