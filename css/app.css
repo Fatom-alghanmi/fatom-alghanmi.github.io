@@ -110,6 +110,7 @@ header p {
   font-size: 1.4em;
   margin-bottom: 15px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .skill-card p {
