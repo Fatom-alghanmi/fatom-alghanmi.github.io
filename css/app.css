@@ -20,6 +20,7 @@ body {
 main {
   width: 100%;
   margin: 0 auto;
+  height: auto;
   padding: 1.5rem 2rem;
 }
 
@@ -94,6 +95,7 @@ header nav a:hover {
 /* ----------------- Sections ----------------- */
 section {
   margin: 0 auto;
+  max-width: none; 
   padding: 3rem 2rem;
   width: 100%;
   border-radius: 12px;
