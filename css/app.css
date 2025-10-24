@@ -13,17 +13,20 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
+
 header {
   text-align: center;
   padding: 50px 20px;
-  background: url('../assets/header3.png') #1a1a1a no-repeat center center;
+  background-color: #1a1a1a;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom: 3px solid #000;
+  transition: background-image 1s ease-in-out;
 }
-
 
 header h1 {
   font-size: 2.5em; /* Adjust size for the main title */
