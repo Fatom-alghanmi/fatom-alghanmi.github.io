@@ -1,3 +1,4 @@
+/* ----------------- Global ----------------- */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -5,23 +6,36 @@
   margin: 0;
 }
 
-
 body {
-  padding: 1.5rem 3rem; /* top & bottom, left & right */
+  margin: 0;
+  padding: 0;
   background: #000;
   color: #fefdfd;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
 
+/* Main wrapper for all sections */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+/* ----------------- Header ----------------- */
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px;
+  height: 500px;
   background-color: #1a1a1a;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom: 3px solid #000;
@@ -30,25 +44,28 @@ header {
 
 header h1 {
   font-size: 2.5em; 
-  text-align: center;
   margin: 0; 
   color: #fff; 
   text-shadow: 2px 2px 7px #222;
-  
 }
 
 header p {
-  font-size: 1.2em; /* Adjust size for the subtitle */
-  margin: 10px 0 0; /* Space above the paragraph */
-  color: #0e4db9; /* Slightly lighter color for the subtitle */
+  font-size: 1.2em; 
+  margin: 10px 0 0;
+  color: #0e4db9;
   text-shadow: 2px 2px 7px #222;
   background-color: #d1d4d7;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* Navigation Links */
+header nav {
+  margin-top: 20px;
+}
 header nav a {
   display: inline-block;     
-  margin: 0 20px;           
+  margin: 0 15px;           
   text-decoration: none;     
   color: #ffffff;           
   font-weight: 500;
@@ -57,43 +74,47 @@ header nav a {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
-
-/* Hover effect */
 header nav a:hover {
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
+/* ----------------- Sections ----------------- */
+section {
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  border-radius: 12px;
+}
 
+/* About Section */
 #about {
-  color: #000;
-  width: 100%;
   background: #599bc3;
+  color: #fff;
   border: 3px solid #000;
   text-align: left;
 }
+
 #about img {
-  max-width: 250px; /* Limits the image size */
+  max-width: 250px; 
   margin: 0 20px 20px 0;
-  height: auto; /* Maintains aspect ratio */
-  float: left;;
-  border-width: 6px;
+  height: auto;
+  float: left;
+  border: 6px solid #000;
   border-radius: 12px;
-  border-color: #000;
 }
 
 #about p {
-  color: #fff; /* Ensures text is readable against background */
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em;
   line-height: 1.6;
-  
-}
-#skills-technologies {
-  width: 100%;
-  background: #4a81b5; /* Dark Blue */
   color: #fff;
-  text-align: center; 
-  box-sizing: border-box;
+}
+
+/* Skills Section */
+#skills-technologies {
+  background: #4a81b5;
+  color: #fff;
+  text-align: center;
 }
 
 #skills-technologies h1 {
@@ -126,7 +147,7 @@ header nav a:hover {
 }
 
 .skill-card h3 {
-  color: #000000; 
+  color: #000; 
   font-size: 1.3em;
   margin-bottom: 15px;
   text-align: center;
@@ -140,34 +161,35 @@ header nav a:hover {
   text-align: center;
 }
 
+/* Portfolio Title */
 .portfolio-title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   background: #2b526a;
-  margin: 20px;
+  margin: 20px 0;
   font-size: 1.6em;
-}
-
-/* Centered Video Container */
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Space between videos */
-  width: fit-content;
-  margin: auto; /* Centers the container horizontally */
-  padding: 10px 0; /* Adds top and bottom spacing for vertical centering */
-  flex-wrap: wrap; /* Allows videos to wrap on smaller screens */
-}
-
-video {
-  width: 30%; /* Fit three videos in a row on larger screens */
-  max-width: 300px; /* Constrains video size for smaller screens */
   border-radius: 8px;
 }
 
+/* Video Container */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+video {
+  flex: 1 1 300px;
+  max-width: 30%;
+  border-radius: 8px;
+}
+
+/* Image Gallery */
 .image-gallery {
   display: flex;
   justify-content: center;
@@ -190,97 +212,109 @@ video {
   transform: scale(1.05);
 }
 
-
+/* XD Buttons */
 .xd-buttons-Grid {
   display: flex;
-  justify-content: center; /* center horizontally */
-  gap: 15px; /* spacing between buttons */
-  flex-wrap: wrap; /* wrap to next line on smaller screens */
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
   margin: 20px 0;
-  color:#fff;
 }
 
+.xd-button {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
 
 .xd-button:hover {
-  background-color: #005bb5; /* Darker color on hover */
+  background-color: #005bb5;
 }
 
-
-/* Hover effect for both images and XD thumbnail */
-.image-gallery img:hover
- {
-  transform: scale(1.05); /* Slight zoom on hover */
-}
-
-
-
-/* Contact Section */
+/* ----------------- Contact Section ----------------- */
 #contact {
-  width: 100%;
   background: #07799c;
   border: 3px solid #000;
-  color: #000;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  text-align: center; /* Center text */
+  color: #fff;
+  text-align: center;
 }
 
-/* Section padding */
-#about, #skills-technologies, #contact {
-  padding: 3rem 2rem; /* scales with body font size */
-}
-
-/* Social Media Container */
+/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Space between icons */
+  gap: 15px;
+  margin: 15px 0;
 }
 
-.social-icon {
-  width: 40px; /* Icon size */
+.social-icons img {
+  width: 40px;
   height: 40px;
-  transition: all 0.3s ease; /* Smooth transition */
-  border-radius: 50%; /* Circle shape */
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Icon Hover Effect */
-.social-icon:hover {
-  background: #fff; /* Change background color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 
-
-
-/* Footer Styles */
+/* Footer */
 footer {
   text-align: center;
-  font-size: 0.5em;
-  padding-top: 10px;
+  font-size: 0.8em;
+  padding: 10px 0;
+  color: #fff;
 }
-/* --- Lightbox Fix --- */
 
-/* Ensure Lightbox overlay and container are always on top of all other content */
+/* ----------------- Lightbox ----------------- */
 .lightboxOverlay,
 .lightbox {
   z-index: 9999 !important;
 }
 
-/* Allow closing when clicking the overlay */
 .lightboxOverlay {
   cursor: pointer !important;
 }
 
-/* Prevent background scroll issues when Lightbox is active */
 body.lb-disable-scrolling {
   overflow: hidden !important;
 }
 
-/* Optional: style the close button for visibility */
 .lb-close {
   top: 20px !important;
   right: 20px !important;
   opacity: 1 !important;
   filter: none !important;
+}
+
+/* ----------------- Responsive Adjustments ----------------- */
+@media (max-width: 900px) {
+  video {
+    max-width: 45%;
+  }
+  .image-gallery img {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  video {
+    max-width: 100%;
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: 1em;
+  }
 }
