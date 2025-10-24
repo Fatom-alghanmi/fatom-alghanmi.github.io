@@ -26,60 +26,25 @@ main {
 /* ----------------- Header ----------------- */
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
-  text-align: center;
-  padding: 20px;
+  justify-content: space-between; /* title left/center, nav right */
+  align-items: center; /* vertically center all content */
+  padding: 0 20px;
   height: 500px;
   background-color: #1a1a1a;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom: 3px solid #000;
-  transition: background-image 1s ease-in-out;
 }
-
-header h1 {
-  font-size: 2.5em; 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 0; 
-  color: #fff; 
-  text-shadow: 2px 2px 7px #222;
 }
-
-header p {
-  font-size: 1.6em; 
-  text-align: center;
-  margin: 10px 0 0;
-  color: #0e4db9;
-  text-shadow: 2px 2px 7px #222;
-  background-color: #d1d4d7;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-/* Navigation Links */
 header nav {
-  margin-top: 20px;
-  text-align: center;
-}
-header nav a {
-  display: inline-block;     
-  margin: 0 15px;           
-  text-decoration: none;     
-  color: #ffffff;           
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-header nav a:hover {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  display: flex;
+  gap: 15px;
 }
 
 /* ----------------- Sections ----------------- */
