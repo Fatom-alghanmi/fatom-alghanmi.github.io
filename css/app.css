@@ -68,14 +68,6 @@ header p {
   margin-top: 10px;
 }
 
-/* Navigation */
-header nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
 header nav a {
   text-decoration: none;
   color: #fff;
@@ -85,10 +77,13 @@ header nav a {
   transition: all 0.3s ease;
 }
 
-header nav a:hover {
-  background-color: #fff;
+header nav a:hover,
+header nav a:target {
+  background-color: #eaee6d;
   color: #1a1a1a;
+  font-weight: bold;
 }
+
 
 /* ----------------- Sections ----------------- */
 section {
