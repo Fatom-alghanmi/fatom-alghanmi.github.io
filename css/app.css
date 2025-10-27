@@ -26,10 +26,13 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 16px 16px 0 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom: 3px solid #000;
   overflow: hidden;
 }
 
+/* Header overlay for readability */
 header::before {
   content: "";
   position: absolute;
@@ -38,7 +41,8 @@ header::before {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   z-index: 0;
-  border-radius: 16px 16px 0 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .header-content {
@@ -67,7 +71,7 @@ header p {
 /* Navigation */
 header nav {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   gap: 20px;
   margin-top: 20px;
 }
@@ -107,8 +111,8 @@ section {
 
 #about img {
   justify-content: left;
-  size: 250px;
-  max-width: 250px;
+  size: 350px;
+  max-width: 350px;
   border: 6px solid #000;
   border-radius: 12px;
 }
