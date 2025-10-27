@@ -119,8 +119,8 @@ section {
 
 #about img {
   justify-content: left;
-  size: 350px;
-  max-width: 350px;
+  size: 250px;
+  max-width: 250px;
   border: 6px solid #000;
   border-radius: 12px;
 }
