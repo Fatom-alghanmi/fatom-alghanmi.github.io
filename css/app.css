@@ -26,26 +26,40 @@ main {
 
 /* ----------------- Header ----------------- */
 header {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical center of title area */
+  justify-content: center;
+  align-items: center;
   height: 500px;
   padding: 20px;
-  background-color: #1a1a1a;
-  position: relative;
+  background-image: url('assets/header.png'); /* default */
+  background-size: cover;
+  background-position: center;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom: 3px solid #000;
+  color: #fff;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 0;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* title centered horizontally */
-  justify-content: center;
-  flex: 1;
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
+
 
 header h1 {
   
