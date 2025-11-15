@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <script src="scripts/app.js" defer></script>
 
   
   <!-- Lightbox CSS -->
@@ -29,10 +30,18 @@
       <h1>Fatom AL-Ghanmi</h1>
       <p>Where Creativity Meets Code</p>
     </div>
-    <nav>
+    <div id="hamburger" onclick="toggleMenu();">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="nav">
       <a href="#about">About Me</a>
-      <a href="#skills-technologies">Skills / Technologies</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#skills-technologies">Skills/Tech</a>
+      <a href="#mockups">Mockups</a>
+      <a href="#xd">Adobe XD</a>
+      <a href="#app">App</a>
+      <a href="#websites">Websites</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -77,67 +86,116 @@
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h1 class="portfolio-title">Portfolio</h1>
+    <!-- Portfolio Section: Adobe XD -->
+<section id="xd">
+  <h1 class="portfolio-title">Adobe XD Prototypes</h1>
+  <div class="xd-buttons-Grid">
+    <a href="https://xd.adobe.com/view/6324a957-ff23-41e7-90e6-f03d56ba3c26-3677/?" target="_blank" class="xd-button">View XD Prototype 1</a>
+    <a href="https://xd.adobe.com/view/916f23a5-d649-4255-836e-f45ec1b6151c-c43c/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 2</a>
+    <a href="https://xd.adobe.com/view/5dd33059-1bfa-4f9d-afeb-74c70e2351d1-0880/" target="_blank" class="xd-button">View XD Prototype 2</a>
+  </div>
+</section>
 
-      <!-- Videos -->
-      <div class="video-container">
-        <video controls>
-          <source src="assets/video1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video controls>
-          <source src="assets/video2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video controls>
-          <source src="assets/video3.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <!-- Portfolio Section: Mockups -->
+<section id="mockups">
+  <h1 class="portfolio-title">Mockups</h1>
+  <div class="image-gallery">
+    <a href="assets/mockup.png" data-lightbox="mockups">
+      <img src="assets/mockup.png" alt="Mockup">
+    </a>
+    <a href="assets/mockup1.png" data-lightbox="mockups">
+      <img src="assets/mockup1.png" alt="Mockup 1">
+    </a>
+    <a href="assets/mockup2.jpeg" data-lightbox="mockups">
+      <img src="assets/mockup2.jpeg" alt="Mockup 2">
+    </a>
+  </div>
+</section>
 
-      <!-- Images -->
-      <div class="image-gallery">
-        <a href="assets/caretrack.jpeg" data-lightbox="portfolio">
-          <img src="assets/caretrack.jpeg" alt="CareTrack Project">
-        </a>
-        <a href="assets/booklist.jpeg" data-lightbox="portfolio">
-          <img src="assets/booklist.jpeg" alt="Booklist Project">
-        </a>
-        <a href="assets/reservation.jpeg" data-lightbox="portfolio">
-          <img src="assets/reservation.jpeg" alt="Reservation Project">
-        </a>
-        <a href="assets/sunglasses.jpeg" data-lightbox="portfolio">
-          <img src="assets/sunglasses.jpeg" alt="Sunglasses Project">
-        </a>
-      </div>
 
-      <!-- Adobe XD Buttons -->
-      <div class="xd-buttons-Grid">
-        <a href="https://xd.adobe.com/view/b4cd46c6-2e80-4d98-b940-211d3da10a32-e19e/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 1</a>
-        <a href="https://xd.adobe.com/view/916f23a5-d649-4255-836e-f45ec1b6151c-c43c/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 2</a>
-        <a href="https://xd.adobe.com/view/11f7d003-8912-4574-a1d0-c52628a6740c-44a4/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 3</a>
-        <a href="https://xd.adobe.com/view/6324a957-ff23-41e7-90e6-f03d56ba3c26-3677/?fullscreen&hints=off" target="_blank" class="xd-button">View XD Prototype 4</a>
+<!-- Portfolio Section: ISO -->
+<section id="app">
+  <h1 class="portfolio-title">App Designs</h1>
+  <div class="image-gallery">
+    <a href="assets/caretrack.jpeg" data-lightbox="iso">
+      <img src="assets/caretrack.jpeg" alt="App Design 1">
+    </a>
+    <a href="assets/iso.png" data-lightbox="iso">
+      <img src="assets/iso.png" alt="App Design 2">
+    </a>
+  </div>
+</section>
+
+<!-- Portfolio Section: Websites -->
+<section id="websites">
+  <h1 class="portfolio-title">Website Projects</h1>
+  <div class="image-gallery">
+    <a href="assets/site1.jpeg" data-lightbox="websites">
+      <img src="assets/site1.jpeg" alt="Blossom Project">
+    </a>
+    <a href="assets/site2.jpeg" data-lightbox="websites">
+      <img src="assets/site2.jpeg" alt="photography Project">
+    </a>
+    <a href="assets/site3.jpeg" data-lightbox="websites">
+      <img src="assets/site3.jpeg" alt="Floral Shop Project">
+    </a>
+    <a href="assets/sunglasses.jpeg" data-lightbox="websites">
+      <img src="assets/sunglasses.jpeg" alt="Sunglasses Project">
+    </a>
+  </div>
+</section>
+
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h1>Resume</h1>
+      <div class="resume-content">
+        <p>You can view my resume below or download it for later.</p>
+    
+        <!-- PDF Viewer -->
+        <iframe src="assets/internship resume.pdf" width="100%" height="600px" style="border:1px solid #ccc;">
+          This browser does not support PDFs. Please download the PDF to view it:
+          <a href="assets/internship resume.pdf" target="_blank">Download Resume</a>
+        </iframe>
+    
+        <!-- Download Button -->
+        <a href="assets/internship resume.pdf" download class="resume-button">
+          Download Resume (PDF)
+        </a>
       </div>
     </section>
+    
+  <!-- Contact Form -->
+<section id="contact">
+  <h2>Contact Me</h2>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="social-icons">
-        <a href="https://github.com/fatom-alghanmi" target="_blank">
-          <img width="32" height="32" src="https://img.icons8.com/windows/32/github.png" alt="GitHub"/>
-        </a>
-        <a href="https://www.linkedin.com/in/fatom-al-ghanmi-8690a351/" target="_blank">
-          <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/linkedin--v1.png" alt="LinkedIn"/>
-        </a>
-        <a href="https://www.instagram.com/craftsbyalghanmia/profilecard/?igsh=M2c2YjR3MzY4bmwx" target="_blank">
-          <img width="32" height="32" src="https://img.icons8.com/windows/32/instagram-new.png" alt="Instagram"/>
-        </a>
-      </div>
-      <a href="mailto:alienabductionsfordummies@hotmail.com">Interested in Collaborating? Email me!</a>
-    </section>
+  <div class="contact-form-wrapper">
+    <form id="feedbackForm">
+      <input id="username" type="text" placeholder="Enter your name" aria-label="username" required><br>
+      <input id="email" type="email" placeholder="Enter your email" aria-label="email" required><br>
+      <textarea name="message" id="message" cols="30" rows="7" maxlength="200" 
+          placeholder="Type your message here… &hearts;" aria-label="message" required></textarea><br>
+      <input type="submit" id="submit" value="Send Message">
+    </form>
+  </div>
+</section>
+
+
+    <!-- Social Media Links -->
+  <div class="contact-social">
+    
+    <div class="social-icons">
+      <a href="https://github.com/fatom-alghanmi" target="_blank">
+        <img width="32" height="32" src="https://img.icons8.com/windows/32/github.png" alt="GitHub"/>
+      </a>
+      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+        <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/linkedin--v1.png" alt="LinkedIn"/>
+      </a>
+      <a href="https://www.instagram.com/craftsbyalghanmia/profilecard/?igsh=M2c2YjR3MzY4bmwx" target="_blank">
+        <img width="32" height="32" src="https://img.icons8.com/windows/32/instagram-new.png" alt="Instagram"/>
+      </a>
+    </div>
+  </div>
   </main>
 
   <!-- Footer -->
@@ -162,5 +220,32 @@
       'disableScrolling': false
     });
   </script>
+
+<div id="bubbles-bg"></div>
+
+<script>
+  function createBubble() {
+    const bubble = document.createElement("span");
+    bubble.classList.add("bubble");
+    
+    // random position across width
+    bubble.style.left = Math.random() * window.innerWidth + "px";
+
+    // random size
+    const size = Math.random() * 40 + 10;
+    bubble.style.width = size + "px";
+    bubble.style.height = size + "px";
+
+    document.getElementById("bubbles-bg").appendChild(bubble);
+
+    // remove bubble after animation
+    setTimeout(() => { bubble.remove(); }, 6000);
+  }
+
+  setInterval(createBubble, 300);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>
